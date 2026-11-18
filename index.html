@@ -6,167 +6,193 @@
     <title>javascript-fundamentals</title>
   </head>
   <style>
-    *{
-        padding: 0;
-        margin: 0;
-        box-sizing: border-box;
+    body {
+      font-family: Arial, sans-serif;
+      background: #f4f4f4;
+      padding: 20px;
+      line-height: 1.6;
     }
-    body{
-        margin: 2%;
+    .container {
+      max-width: 900px;
+      margin: auto;
+      background: white;
+      padding: 25px;
+      border-radius: 10px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     }
-    h1{
-        text-align: center;
+    h1 {
+      text-align: center;
+      color: black;
+      border-bottom: 3px solid black;
+      padding-bottom: 10px;
+      text-transform: uppercase;
+      font-size: large;
+      font-weight: 800;
     }
-    p{
-        padding-top: 2%;
+    h2 {
+      color: black;
+      margin-top: 15px;
+      margin-bottom: 15px;
+      border-left: 5px solid black;
+      padding-left: 10px;
+      text-transform: uppercase;
+      font-size: large;
+      font-weight: 800;
+    }
+    h4 {
+      color: #444;
+      margin-bottom: 15px;
+      margin-top: 15px;
+      white-space: pre-line;
+    }
+    h3 {
+      text-align: center;
+    }
+    p {
+      background: black;
+      color: #d4d4d4;
+      padding: 15px;
+      border-radius: 5px;
+      overflow-x: auto;
+      white-space: pre-line;
+      font-size: small;
+      font-family: "Consolas", "Courier New", monospace;
     }
   </style>
   <body>
-    <h1>JavaScript Practice Assignment</h1>
-<br>
-    <h2>
-      Topic: "Variables, Arithmetic Operators, and Conditional Statements"
-    </h2>
-<br><br>
+    <div class="container">
+    <h1>JavaScript-fundamentals</h1>
+    <h3><strong>Check console for output (F12)</strong></h3>
+    <h2>Varaibles</h2>
     <h4>
-      Question 1: First and Last Name <br />
-      Create two variables: "firstName" and "lastName". Store your first and
-      last name in them and print your full name.
+      Q1. First and Last Name: Create two variables:
+       "firstName" and "lastName". 
+      Store your first and last name in them and print your full name.
     </h4>
-    <p>Ans: 
-      let firstname = "AFRA"; <br>
-      let lastname = "HASNAIN"; <br>
+    <p> 
+      let firstname = "AFRA"; 
+      let lastname = "HASNAIN"; 
       console.log(firstname + " " + lastname);
     </p>
-<br><br>
+    <h2>Arithmetic Operations</h2>
     <h4>
-      Question 2: Arithmetic Operations <br />
-      Create three variables: num1, num2, and num3. Perform the following
-      operations using all three values: <br />
+      Q2. Create three variables: num1, num2, and num3. 
+      Perform the following operations using all three values:
       - Addition - Subtraction - Multiplication - Division
-      <br />
       Display the result of each operation.
     </h4>
-    <p>Ans: let num1 = 10;
+    <p> let num1 = 10;
       let num2 = 20;
-      let num3 = 5; <br>
-      console.log(num1 + num2 + num3); <br>
-      console.log(num1 - num2 - num3); <br>
-      console.log(num1 * num2 * num3); <br>
+      let num3 = 5; 
+      console.log(num1 + num2 + num3); 
+      console.log(num1 - num2 - num3); 
+      console.log(num1 * num2 * num3); 
       console.log(num1 / num2 / num3);</p>
-<br><br>
+      <h2> Conditional Statements</h2>
     <h4>
-      Question 3: Temperature Checker <br />
-      Take the temperature from the user. <br />
-      - If the temperature is 0°C or below, print "Freezing". <br />
+      Q3. Temperature Checker: Take the temperature from the user.
+      - If the temperature is 0°C or below, print "Freezing". 
       - Otherwise, print "Not freezing".
     </h4>
-    <p>Ans: let temp = prompt("Enter Temperature"); <br>
+    <p> let temp = prompt("Enter Temperature"); 
       if (temp <= 0) {
         console.log("Freezing"); 
       } 
-      <br> else {
+      else {
         console.log("Not freezing");
       }</p>
-<br><br>
     <h4>
-      Question 4: Age Category <br />
-      Take the user's age and display the appropriate category: <br />
-      - 0-12: Child <br />
-      - 13-19: Teenager <br />
-      - 20-59: Adult <br />
+      Q4. Age Category: Take the user's age and display the appropriate category: 
+      - 0-12: Child 
+      - 13-19: Teenager 
+      - 20-59: Adult 
       - 60 and above: Senior Citizen
     </h4>
-    <p>Ans: let age = prompt("Enter Your Age"); <br>
+    <p> let age = prompt("Enter Your Age");
       if (age >= 0 && age <= 12) {
         console.log("Child");
-      } <br>
+      }
       else if (age >= 13 && age <= 19) {
         console.log("Teenager");
-      } <br>
+      }
        else if (age >= 20 && age <= 59) {
         console.log("Adult");
-      } <br>
+      }
       else {
         console.log("Senior Citizen");
       }</p>
-<br><br>
-    <h4>
-      Question 5: Electricity Bill Calculator <br />
-      Take the number of electricity units consumed and calculate the bill using
-      these rates: <br />
-      - First 100 units: Rs. 10 per unit <br />
-      - Next 100 units: Rs. 15 per unit <br />
-      - Above 200 units: Rs. 20 per unit <br />
 
-      Calculate the bill using cumulative rates. For example, the first 100
-      units are charged at Rs. 10 each, and only the units above 100 are charged
-      at the next rate.
+    <h4>
+      Q5. Electricity Bill Calculator: Take the number of electricity units consumed and calculate the bill using these rates: 
+      - First 100 units: Rs. 10 per unit 
+      - Next 100 units: Rs. 15 per unit 
+      - Above 200 units: Rs. 20 per unit 
+
+      Calculate the bill using cumulative rates.
+      For example, the first 100 units are charged at Rs. 10 each, and only the units above 100 are charged at the next rate.
     </h4>
-    <p>Ans: let units = prompt("Enter Units"); 
-      let bill = 0; <br>
+    <p> let units = prompt("Enter Units"); 
+      let bill = 0;
       if (units <= 100) {
         bill = units * 10;
-      } <br>
+      }
        else if (units <= 200) {
-        bill = 100 * 10 + (units - 100) * 15;
-      } <br>
+        bill = 100 + 10 + (units - 100) * 15;
+      }
       else {
-        bill = 100 * 10 + 100 * 15 + (units - 200) * 20;
-      } <br>
+        bill = 100 + 10 + 100 * 15 + (units - 200) * 20;
+      }
       console.log(bill);
 </p>
-<br><br>
+
     <h4>
-      Question 6: Traffic Light <br />
-      Take a traffic light color as input. <br />
-      - Red: "Stop" <br />
-      - Yellow: "Ready" <br />
-      - Green: "Go" <br />
+      Q6. Traffic Light: Take a traffic light color as input. 
+      - Red: "Stop" 
+      - Yellow: "Ready" 
+      - Green: "Go" 
       - Any other color: "Invalid Color"
     </h4>
-    <p>Ans: let color = prompt("Enter Traffic Light Color"); <br>
-      if (color === "red") {
+    <p> let color = prompt("Enter Traffic Light Color");
+      if (color == "red") {
         console.log("Stop");
-      } <br>
-       else if (color === "yellow") {
+      }
+       else if (color == "yellow") {
         console.log("Ready");
-      } <br>
-       else if (color === "green") {
+      }
+       else if (color == "green") {
         console.log("Go");
-      } <br>
+      }
       else {
         console.log("Invalid Color");
       }</p>
-<br><br>
+
     <h4>
-      Question 7: Pocket Money Checker <br />
-      Take the amount of pocket money. <br />
-      - If it is greater than Rs. 500, print "You can buy a gift". <br />
+      Q7. Pocket Money Checker: Take the amount of pocket money. 
+      - If it is greater than Rs. 500, print "You can buy a gift". 
       - Otherwise, print "Save your money".
     </h4>
-    <p>Ans: let pocketmoney = prompt("Enter Pocket Money"); <br>
+    <p> let pocketmoney = prompt("Enter Pocket Money");
       if (pocketmoney > 500) {
         console.log("You can Buy a Gift");
-      } <br>
+      }
        else {
         console.log("Save your money");
       }
 </p>
-<br><br>
+
     <h4>
-      Question 8: Free Delivery Checker <br />
-      Take the total shopping amount. <br />
-      - If it is Rs. 2,000 or more, print "Free Delivery". <br />
+      Q8. Free Delivery Checker: Take the total shopping amount. 
+      - If it is Rs. 2,000 or more, print "Free Delivery". 
       - Otherwise, print "Delivery Charges Apply".
     </h4>
-    <p>Ans: let shopping = prompt("Enter Shopping Amount"); <br>
+    <p> let shopping = prompt("Enter Shopping Amount");
       if (shopping >= 2000) {
         console.log("Free Delivery");
-      } <br>
+      }
       else {
         console.log("Delivery charges Apply");
       }</p>
+    </div>
 
     <script>
       //    Question 01: First and Last Name
@@ -209,19 +235,19 @@
       if (units <= 100) {
         bill = units * 10;
       } else if (units <= 200) {
-        bill = 100 * 10 + (units - 100) * 15;
+        bill = 100 + 10 + (units - 100) * 15;
       } else {
-        bill = 100 * 10 + 100 * 15 + (units - 200) * 20;
+        bill = 100 + 10 + 100 * 15 + (units - 200) * 20;
       }
       console.log(bill);
 
       // Question 06: Traffic Light
       let color = prompt("Enter Traffic Light Color");
-      if (color === "red") {
+      if (color == "red") {
         console.log("Stop");
-      } else if (color === "yellow") {
+      } else if (color == "yellow") {
         console.log("Ready");
-      } else if (color === "green") {
+      } else if (color == "green") {
         console.log("Go");
       } else {
         console.log("Invalid Color");
